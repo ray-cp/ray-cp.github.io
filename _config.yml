@@ -17,7 +17,7 @@ profile: DON'T STOP UNTIL YOU'RE PROUD.
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+#duoshuo_shortname: xxx   #get one: http://duoshuo.com/create-site/
 
 permalink: /archivers/:title
 gems:
