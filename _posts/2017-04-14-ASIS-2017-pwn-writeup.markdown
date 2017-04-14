@@ -86,3 +86,5 @@ second we can't simple call malloc, but we can find a way to execute RCE. we ove
 ## link
 
 at last i wanna thanks the guys for sharing the writeups. actually, i can't do all the problem by myself. i read a lot of guys blog  after the end of this ctf. especially ,the exp of  **CaNaKMgF_remastered** and **pray_CaNaKMgF**  i just copy that from [PaulCher](https://gist.github.com/PaulCher/756503140162b255a478aa395343d201)
+
+you can find all the exp [here](https://github.com/ray-cp/ctf-pwn/tree/master/ASIS-2017) 
