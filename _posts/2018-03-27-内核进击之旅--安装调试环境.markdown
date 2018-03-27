@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "内核进击之旅--安装调试环境"
+date:   2018-03-26 07:00:00
+categories: windows-kernel-exploit
+permalink: /archivers/内核进击之旅--安装调试环境
+---
+## 环境
+需要安装的环境包括三个部分：
+* VS2017&WDK（Windows Driver Kit）：用来编译驱动程序。
+* 内核调试环境：即双机调试，使用VMware用宿主机对虚拟机进行调试，在宿主机上安装Windbg。调试机使用Win7 虚拟机。
+* 下载驱动加载工具osrloader。
+
+
+## 安装过程
+### VS2017&WDK安装
+在官网下载WDK以及VS2017[https://docs.microsoft.com/zh-cn/windows-hardware/drivers/download-the-wdk](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/download-the-wdk)
+
+VS2017 和 WDK 都安装完毕后，运行 VS2017，新建项目时就可以看到有 Windows Driver 的选项了，我们新建一个 WDK 的 Kernel Mode Driver 的空项目，然后新建一个 DriverEntry.c，里面写一些测试代码。然后点击项目属性，修改如下几个选项：
+* 在C/C++选项卡代码生成中选择关闭安全检查。
+* 在C/C++选项卡常规中关闭将警告视为错误，同时将警告等级修改为3.
+* 在Driver Settings中设置OS平台为相应的平台（如Win7 Desktop）
+### 内核调试环境安装
+#### 调试机设置
+运行VMware后，首先将调试机电源关闭，关闭后才能对系统进行设置。打开虚拟机的设置，先删除打印机，以免占用串行端口1，点击添加，添加一个串行端口。串行端口选择输出到命名管道，在命名管道的选项卡中，第一个的是管道名称`\\.\pipe\com_1`，第二个选择该端是服务器表明这个虚拟机是用于被调试的虚拟机，第三个选择另一端是应用程序，同时选中启动时连接选项，设置完成后，点击完成。
+
+完成后，在设置里点击串行端口，可以看到要求在首选项中启动虚拟打印机，从编辑->首选项->设备中设置即可，再点击串行端口，选中轮询时主动放弃CPU。最后点击确定，虚拟机部分设置完成。
+
+接下来设置Win7系统，vista 及后续的 windows系统已经取消了 ntldr 模块管理引导，转而以 bootmgr 模块管理引导系统。
+进入虚拟机后，以管理员权限运行cmd输入下列命令：
+* bcdedit /copy {current} /d "Windwos7" 建立一个新的启动项。
+* bcdedit /debug ON
+* bcdedit /bootdebug ON 设置新的启动项。
+* bcdedit /dbgsettings 查看当前的调试配置：
+* bcdedit /timeout 10 选择菜单的超时，我设置为10秒
+* bcdedit -set TESTSIGNING on 设置允许加载不受信任的驱动
+设置好后重启需要调试进入调试模式即可
+
+
+#### 宿主机设置
+宿主机上主要是使用Windbg对调试机进行调试，因此主要是设置Windbg，Windbg去官网下载即可。
+
+首先在桌面创建一个Windbg的快捷方式，然后右键快捷方式点击属性。在目标选项卡中的引号后添加`-b -k com:port=\\.\pipe\com_1,baud=115200,pipe`,其中-b表示初始断点，-k表示内核调试，com:port表示命名管道以及baud表示波特率，pipe表示串行通信方式连接。
+#### 测试
+重启虚拟机，可以看到有两个系统可以选择，选择调试，点击刚刚设置的快捷方式打开Windbg，过一会即可看到windbg连接上了调试机。
+
+### 驱动加载工具
+osr driver loader，去网上搜，下载即可
