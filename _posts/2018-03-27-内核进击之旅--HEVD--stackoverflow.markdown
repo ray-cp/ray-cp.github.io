@@ -9,7 +9,7 @@ permalink: /archivers/内核进击之旅--HEVD--stackoverflow
 HEVD全称是HackSysExtremeVulnerableDriver，它是一个包含各种Windows内核漏洞的驱动程序项目，可以用来学习Windows内核攻击。地址是[https://github.com/hacksysteam/HackSysExtremeVulnerableDriver](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 
 ## 前奏
-首先需要编译驱动程序，在前一篇中安装环境和编译已经描述清楚了。一开始我编译的平台是Win7x86。后面再介绍x64，二者相差不大。编译完成后，使用OSR driver Loader在目标系统中加载驱动，加载完成后开始分析。同时在windbg里执行`ed nt!Kd_Default_Mask 8`就可以修改注册表打开DbgPrint调试输出。
+首先需要编译驱动程序，在前一篇中[安装环境](https://ray-cp.github.io/archivers/内核进击之旅--安装调试环境)和编译已经描述清楚了。一开始我编译的平台是Win7x86。后面再介绍x64，二者相差不大。编译完成后，使用OSR driver Loader在目标系统中加载驱动，加载完成后开始分析。同时在windbg里执行`ed nt!Kd_Default_Mask 8`就可以修改注册表打开DbgPrint调试输出。
 
 ## 漏洞分析
 第一个漏洞是stackoverflow，因为程序有源代码，所以我先直接看的源代码。可以看到`HACKSYS_EVD_IOCTL_STACK_OVERFLOW` IO code对应的是`StackOverflowIoctlHandler`例程函数。跟进去这个函数，发现它获取了用户的输入以及用户传入的输入大小并且调用`TriggerStackOverflow`函数，继续跟进，发现`TriggerStackOverflow`即是漏洞函数。
