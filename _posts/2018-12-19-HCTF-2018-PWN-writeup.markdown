@@ -2,7 +2,7 @@
 layout: post
 title:  "HCTF 2018 部分 PWN writeup"
 date:   2018-12-19 07:00:00
-categories: CTF
+categories: ctf
 permalink: /archivers/HCTF-2018-PWN-writeup
 ---
 ## 前言
