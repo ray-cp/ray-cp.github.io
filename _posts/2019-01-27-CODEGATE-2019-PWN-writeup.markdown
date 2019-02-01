@@ -68,5 +68,30 @@ Now we get all the address we need, so we can use `developer` function to overwr
 
 Finally, get the shell.
 
+## maris_shop
+### vuln
+There is a `uaf` vuln. We can first create 16 carts. And when we buy all the carts, it will free all the carts but just set 15 carts pointer and leave the last ont unclean. That's the pointer we can use to leak address and exploit.
+
+### expolit
+first, check the security mechanism: 
+```C
+gdb-peda$ checksec
+CANARY    : ENABLED
+FORTIFY   : disabled
+NX        : ENABLED
+PIE       : ENABLED
+RELRO     : Partial
+gdb-peda$ 
+```
+There is a small trick to bypass `money check`, which is we can use `0 amount`.
+
+The whole process is shown as below:
+1. we create 16 carts. 
+2. we by all the carts, the programe will free all the pointer and leave the 15th pointer unclean. 
+3. we show the 15th pointer and leak the address of libc.
+4. we add the 15th carts and make unsorted bin attack, which overwrite `stdin->_IO_buf_end` to point to `main_arena`.
+5. we call fgets will overwrite the `stdin->vtable`, address of which  contains `one gadgets` .
+6. get shell
+
 ## conclusion
 all the exp is in my [github](https://github.com/ray-cp/ctf-pwn/tree/master/codegate2019)
