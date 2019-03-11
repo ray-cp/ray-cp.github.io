@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Paper_Note"
+title:  "Paper Note: Towards Automated Dynamic Analysis for Linux-based Embedded Firmware"
 date:   2019-03-12 07:30:00
 categories: Paper
 permalink: /archivers/PAPER-NOTE
@@ -36,10 +36,10 @@ FIRMADYNE首先自动解压厂商固件，因为目前设备都是基于Linux系
 
 本章主要描述组成FIRMADYNE的各部分组件以及设计他们的动机。
 
-![Alt text](https://github.com/ray-cp/ray-cp.github.io/tree/master/_img/Paper_Note_Towards_Automated_Dynamic_Analysis_for_Linux-based_Embedded Firmware/1551654384697.png)
+![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/Paper_Note_Towards_Automated_Dynamic_Analysis_for_Linux-based_Embedded_Firmware/1551654384697.png)
 
 **组件**
-
+s
 如上图所示，主要包括以下组件：
 * 爬取固件。第一个独立的组件就是爬虫，从厂商去下载相应的固件镜像。
 * 提取固件文件系统。基于binwalk的API来踢去文件系统。
