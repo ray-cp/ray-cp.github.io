@@ -2,8 +2,8 @@
 layout: post
 title:  "Paper Note: Towards Automated Dynamic Analysis for Linux-based Embedded Firmware"
 date:   2019-03-12 07:30:00
-categories: Paper
-permalink: /archivers/PAPER-NOTE
+categories: PAPER_NOTE
+permalink: /archivers/Paper_Note:_Towards_Automated_Dynamic_Analysis_for_Linux-based_Embedded_Firmware
 ---
 
 # Paper Note: Towards Automated Dynamic Analysis for Linux-based Embedded Firmware

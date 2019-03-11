@@ -1,10 +1,17 @@
+---
+layout: post
+title:  "Paper_Note"
+date:   2019-03-12 07:00:00
+categories: PAPER_NOTE
+permalink: /archivers/PAPER-NOTE
+---
+
 # Paper Note
 ## Finished
 1. IOTFUZZER: Discovering Memory Corruptions in IoT Through App-based Fuzzing
 2. Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
 
 ## ING
-
 
 ## To Do
 
