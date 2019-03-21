@@ -32,8 +32,6 @@ paginate_path: "page:num"
 highlighter: rouge
 markdown: kramdown
 
-baidu-analysis: 23e2fba4a9ee47e00000d658a6f021db
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
