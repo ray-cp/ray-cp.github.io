@@ -3,7 +3,7 @@ layout: post
 title:  "Papter Note: IOTFUZZER: Discovering Memory Corruptions in IoT Through App-based Fuzzing"
 date:   2019-02-27 07:30:00
 categories: PAPER_NOTE
-permalink: /archivers/Papter_Note:_IOTFUZZER:_Discovering_Memory_Corruptions_in_IoT_Through_App-based_Fuzzing
+permalink: /archivers/Papter_Note_IOTFUZZER_Discovering_Memory_Corruptions_in_IoT_Through_App-based_Fuzzing
 ---
 
 # Papter Note: IOTFUZZER: Discovering Memory Corruptions in IoT Through App-based Fuzzing
