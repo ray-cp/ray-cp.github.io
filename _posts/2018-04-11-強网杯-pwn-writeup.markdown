@@ -2,8 +2,8 @@
 layout: post
 title:  "强网杯-pwn-writeup"
 date:   2018-04-26 08:00:00
-categories: CTF
-permalink: /archivers/内强网杯-pwn-writeup
+categories: ctf
+permalink: /archivers/强网杯-pwn-writeup
 ---
 ## opm
 ### 漏洞
