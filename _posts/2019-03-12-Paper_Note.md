@@ -10,6 +10,7 @@ permalink: /archivers/PAPER-NOTE
 ## Finished
 1. IOTFUZZER: Discovering Memory Corruptions in IoT Through App-based Fuzzing
 2. Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
+3. Internet of Things: A survey on the security of IoT frameworks
 
 ## ING
 
