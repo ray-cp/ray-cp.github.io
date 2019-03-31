@@ -7,6 +7,7 @@ permalink: /archivers/Paper_Note_Internet_of_Things_A_survey_on_the_security_of_
 ---
 
 2019.3.13-2019.4.01
+
 感觉这篇文章看的意义不大，但是由于已经开头了，所以还是看完了。文章的主要内容为介绍了一些IoT开发框架以及这些框架的架构、应用规范、硬件规范以及一些安全特色，作用算是帮助了解了一些框架吧。
 ## 绪论
 
@@ -87,9 +88,12 @@ Vikas B. Internet of things (iot): A survey on privacy issues and security 2015.
 
 ## IoT 框架
 
-### AWS IoT **
+### AWS IoT 
 
 AWS （Amazon Web Services）IoT是亚马逊发布的云平台。
+
+**架构**
+
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/Paper_Note_Internet_of_Things_A_survey_on_the_security_of_IoT_frameworks/1552603757601.png)
 如图是AWS的框架，由四个组件构成：
 * 设备网关：设备网关充当连接设备和云服务之间的中介，允许这些设备通过MQTT协议进行通信和交互。
