@@ -102,13 +102,13 @@ AWS （Amazon Web Services）IoT是亚马逊发布的云平台。
 * Device Shadows：AWS IoT通过创建名为Device Shadow的虚拟映像来实例化每个连接的设备。它可以表示设备在线时的最后的状态。
 AWS提供了`Device SDK`来使得开发更加的便捷。
 
-** 智能应用规范**
+**智能应用规范**
 没有平台或编程语言的限制。
 
-** 硬件规范 **
+**硬件规范**
 AWS IoT提供了一个开源客户端库和设备SDK使框架可用于多个嵌入式操作系统和微控制器平台。
 
-** 安全特色 **
+**安全特色**
 使用多层安全架构，如图所示：
  ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/Paper_Note_Internet_of_Things_A_survey_on_the_security_of_IoT_frameworks/1552605094343.png)
 
@@ -122,18 +122,18 @@ AWS IoT提供了一个开源客户端库和设备SDK使框架可用于多个嵌�
 
 ARM mbed IoT是一个基于ARM微控制器开发物联网应用程序的平台。它的优势在于提供一个通用操作系统以及支持设备与端的通信。
 
-** 架构 **
+**架构**
 ARM mbed IoT平台的关键构建链是mbed操作系统、mbed客户端库、mbed云、mbed设备连接器和基于ARM微控制器的硬件设备。 mbed OS代表了该平台的支柱。 因此我们首先讨论该OS，该OS架构如图所示。
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/Paper_Note_Internet_of_Things_A_survey_on_the_security_of_IoT_frameworks/1552606095338.png)
 该框架是开源的框架。
 
-** 智能应用规范**
+**智能应用规范**
 IoT是被需使用C++语言进行开发，而对于用户端没有要求，只要支持REST API即可。
 
-** 硬件规范 **
+**硬件规范**
 主要是支持基于ARM Cortex-M 32位的处理器，支持RISC指令结构。
 
-** 安全特色 **
+**安全特色**
 mbed IoT平台的安全机制主要在以下三个层次实施：
 * 设备本身（作为硬件和mbed OS）。
 * 通信渠道。
