@@ -13,7 +13,7 @@ permalink: /archivers/PAPER-NOTE
 3. Internet of Things: A survey on the security of IoT frameworks
 
 ## ING
-
+Saluki: Finding Taint-style Vulnerabilities with Static Property Checking
 ## To Do
 
 L. Constantin, “Hackers found 47 new vulnerabilities in 23 IoT devices at DEF CON,” http://www.csoonline.com/article/3119765/security/ hackers- found- 47- new- vulnerabilities- in- 23- iot- devices- at- def- con. html, Accessed: November 2017.
