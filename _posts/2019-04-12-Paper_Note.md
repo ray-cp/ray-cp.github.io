@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Paper_Note"
-date:   2019-03-12 07:00:00
+date:   2019-04-12 08:00:00
 categories: PAPER_NOTE
 permalink: /archivers/PAPER-NOTE
 ---
@@ -10,11 +10,19 @@ permalink: /archivers/PAPER-NOTE
 ## Finished
 1. IOTFUZZER: Discovering Memory Corruptions in IoT Through App-based Fuzzing
 2. Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
+    时间：2019.02.28-2019.03-11
 3. Internet of Things: A survey on the security of IoT frameworks
+    时间：2019.03.13-2019.03.
+4. Saluki: Finding Taint-style Vulnerabilities with Static Property Checking
+    时间：2019.4.02-2019.4.12
 
 ## ING
-Saluki: Finding Taint-style Vulnerabilities with Static Property Checking
+A large-scale analysis of the security of embedded firmwares
+
 ## To Do
+
+Internet of Things security: A survey
+FA Alaba, M Othman, IAT Hashem, F Alotaibi - Journal of Network and …, 2017 - Elsevier
 
 L. Constantin, “Hackers found 47 new vulnerabilities in 23 IoT devices at DEF CON,” http://www.csoonline.com/article/3119765/security/ hackers- found- 47- new- vulnerabilities- in- 23- iot- devices- at- def- con. html, Accessed: November 2017.
 
@@ -39,4 +47,9 @@ A. Costin, J. Zaddach, A. Francillon, and D. Balzarotti, “A large-scale analys
 Security Symposium. USENIX, 2014, pp. 95–110. [Online]. Available: https://www.usenix.org/conference/ usenixsecurity14/technical-sessions/presentation/costin
 
 D. Davidson, B. Moench, S. Jha, and T. Ristenpart, “FIE on firmware: Finding vulnerabilities in embedded systems using symbolic execution finding vulnerabilities in embedded systems using symbolic execution,” in Proceedings of the 22nd USENIX Security Symposium. USENIX, 2013, pp. 463–478. [Online]. Available: https://www.usenix.org/conference/ usenixsecurity13/technical-sessions/paper/davidson
+
+U. Shankar, Talwar Kunal, J. S. Foster, and D. Wagner, “Detecting Format String Vulnerabilities with Type Quali-
+fiers.” in USENIX Security Symposium, 2001.
+
+P. Godefroid, “Micro execution,” International Conference on Software Engineering, pp. 539–549, 2014.
 
