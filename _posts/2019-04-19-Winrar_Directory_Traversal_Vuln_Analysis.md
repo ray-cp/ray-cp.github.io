@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "winrar 目录穿越漏洞分析"
+title:  "CVE-2018-20250-winrar 目录穿越漏洞分析"
 date:   2019-04-19 15:00:00
 categories: Vuln_Analysis
 permalink: /archivers/Winrar_Directory_Traversal_Vuln_Analysis
@@ -143,6 +143,6 @@ python有一个ace文件解析的模块[acefile](https://pypi.org/project/acefil
 
 ## 参考链接
 
-[winace](https://web.archive.org/web/20170714193504/http:/winace.com:80/)
-[acefile]( https://pypi.org/project/acefile/#files)
-[Extracting a 19 Year Old Code Execution from WinRAR](https://research.checkpoint.com/extracting-code-execution-from-winrar/)
+1. [winace](https://web.archive.org/web/20170714193504/http:/winace.com:80/)
+2. [acefile]( https://pypi.org/project/acefile/#files)
+3. [Extracting a 19 Year Old Code Execution from WinRAR](https://research.checkpoint.com/extracting-code-execution-from-winrar/)
