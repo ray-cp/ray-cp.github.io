@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "winrar 穿越目录漏洞分析"
+title:  "winrar 目录穿越漏洞分析"
 date:   2019-04-19 15:00:00
 categories: Vuln_Analysis
 permalink: /archivers/Winrar_Directory_Traversal_Vuln_Analysis
