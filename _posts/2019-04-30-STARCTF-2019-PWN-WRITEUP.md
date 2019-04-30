@@ -7,7 +7,7 @@ permalink: /archivers/STARCTF_2019_PWN_WRITEUP
 ---
 ***KEEP HOLDING ON***
 
-First, i'd like to propose a tool [**pwn_debug**](https://github.com/ray-cp/pwn_debug.git) to you for debugging ctf pwn games. it came out to me after participating a lot games during recent years.
+First, i'd like to propose a tool [**pwn_debug**](https://github.com/ray-cp/pwn_debug) to you for debugging ctf pwn games. it came out to me after participating a lot games during recent years.
 
 It mainly has four features:
 * Support glibc source debugging no matter x86 or 64, easy to debug libc functions such as malloc and free.
@@ -123,6 +123,6 @@ suddenly, i think that the upx need to unpack the text and the memory may differ
 
 During the game,  among all the six normal pwn games, i didn't figure out how to solve the `heap_master`. it was a little pity, should do better next time.
 
-again, recommend the [**pwn_debug**](https://github.com/ray-cp/pwn_debug.git) to you, hope it may do a little favor for your pwn process.
+again, recommend the [**pwn_debug**](https://github.com/ray-cp/pwn_debug) to you, hope it may do a little favor for your pwn process.
 
 the whole exp is in my [github](https://github.com/ray-cp/ctf-pwn/tree/master/2019/starctf2019).
