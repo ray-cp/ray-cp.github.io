@@ -1,5 +1,5 @@
 # Site settings
-title: raycp's blog, just fun
+title: pwn pwn pwn, passion & love
 url: "http://ray-cp.github.io"    # the protocol and hostname of your site, eg. `http://xxxx.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
@@ -11,8 +11,9 @@ email: raycp@protonmail.com
 author: raycp
 avatar: "http://s.gravatar.com/avatar/a1ab0d9de11daf93ca2637bd680c5638?s=80"
 profile: DON'T STOP UNTIL YOU'RE PROUD.
-#twitter_username: twitter_username
-#github_username:  github_username
+twitter_username: raycp2
+github_username: ray-cp
+weibo_username: 6087432820
 
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
