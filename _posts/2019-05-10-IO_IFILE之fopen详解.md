@@ -245,3 +245,5 @@ libc_hidden_def (_IO_file_open)
 
 整个流程还是比较简单的，fopen返回之后`_IO_list_all`链表指向返回的FILE结构体，且FILE结构体的_chain字段指向之前的结构体（没有其他额外打开文件的话，将是指向`stderr`），同时其他的字段大多都是默认的null值，`vtable`存储的是`__GI__IO_file_jumps`函数表，截图如下。
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/IO_FILE_fopen_analysis/./1557314446379.png)
+
+文章先发于[安全客](https://www.anquanke.com/post/id/177910)
