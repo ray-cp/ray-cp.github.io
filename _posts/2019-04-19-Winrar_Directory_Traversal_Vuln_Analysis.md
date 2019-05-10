@@ -5,7 +5,7 @@ date:   2019-04-19 15:00:00
 categories: Vuln_Analysis
 permalink: /archivers/Winrar_Directory_Traversal_Vuln_Analysis
 ---
-文章首发于[先知社区](https://xz.aliyun.com/t/4221)
+
 ## 漏洞描述
 Check Point团队爆出了一个关于WinRAR存在19年的漏洞，用它来可以获得受害者计算机的控制。攻击者只需利用此漏洞构造恶意的压缩文件，当受害者使用WinRAR解压该恶意文件时便会触发漏洞。
 
@@ -139,10 +139,10 @@ python有一个ace文件解析的模块[acefile](https://pypi.org/project/acefil
 
 
 
-
-
 ## 参考链接
 
 1. [winace](https://web.archive.org/web/20170714193504/http:/winace.com:80/)
 2. [acefile]( https://pypi.org/project/acefile/#files)
 3. [Extracting a 19 Year Old Code Execution from WinRAR](https://research.checkpoint.com/extracting-code-execution-from-winrar/)
+
+文章首发于[先知社区](https://xz.aliyun.com/t/4221)
