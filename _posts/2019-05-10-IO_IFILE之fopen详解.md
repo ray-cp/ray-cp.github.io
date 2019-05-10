@@ -134,7 +134,7 @@ _IO_no_init (_IO_FILE *fp, int flags, int orientation,
 可以看到函数最主要的功能是初始化`locked_FILE`里面的`_IO_FILE_plus`结构体，基本上将所有的值都初始化为null以及默认值，同时将`_wide_data`字段赋值并初始化。初始化结束后，FILE结构体如下：
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/IO_FILE_fopen_analysis/./1557306452339.png)
 
-### _IO_file_init将结构体链接进_IO_list_all。
+### _IO_file_init将结构体链接进_IO_list_all
 在执行完`_IO_no_init`函数后，回到`__fopen_internal`函数，函数将`_IO_FILE_plus`结构体的vtable设置成了`_IO_file_jumps`，然后调用`_IO_file_init`将`_IO_FILE_plus`结构体链接进入`_IO_list_all`链表，跟进去函数，函数在`/libio/fileops.c`中：
 ```
 void
