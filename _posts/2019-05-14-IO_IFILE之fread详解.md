@@ -2,7 +2,7 @@
 layout: post
 title:  "IO FILE之fread详解"
 date:   2019-05-14 15:15:00
-categories: CTF 
+categories: ctf
 permalink: /archivers/IO_FILE_fread_analysis
 ---
 

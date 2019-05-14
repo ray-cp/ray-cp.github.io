@@ -2,7 +2,7 @@
 layout: post
 title:  "IO FILE之fopen详解"
 date:   2019-05-10 17:32:00
-categories: CTF 
+categories: ctf
 permalink: /archivers/IO_FILE_fopen_analysis
 ---
 
