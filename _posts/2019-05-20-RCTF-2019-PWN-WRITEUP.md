@@ -25,7 +25,7 @@ unlukily, there are some limitations in this game:
 * there is a `seccomp` sandbox to limit the syscall which can't use `execve` to get shell.
 
 ```
-$ seccomp-tools dump ./babyheap
+seccomp-tools dump ./babyheap
  line  CODE  JT   JF      K
 =================================
  0000: 0x20 0x00 0x00 0x00000004  A = arch
@@ -108,7 +108,7 @@ but here it can't realized, for it is in `thread arena` and not in `main arean`.
         {
           ...
               _int_free (av, old_top, 1);
-            }
+        }
 ``` 
 
 normally , the `grow_heap` function returns zero, so it directly expand the old top. go into the `grow_heap` to find how to make `grow_heap` function return none zero:
