@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "STARCTF 2019 PWN WRITEUP"
-date:   2019-04-30 21:30:00
+title:  "RCTF 2019 PWN WRITEUP"
+date:   2019-05-20 23:30:00
 categories: ctf
-permalink: /archivers/STARCTF_2019_PWN_WRITEUP
+permalink: /archivers/RCTF_2019_PWN_WRITEUP
 ---
 Best love to my girlfriend on 5.20, lol.
 
