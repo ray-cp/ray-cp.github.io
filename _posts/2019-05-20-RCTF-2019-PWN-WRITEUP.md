@@ -23,6 +23,7 @@ we can use the overlap chunk to leak `libc address`. and in  regular `overlap ch
 unlukily, there are some limitations in this game:
 * there is no fastbin chunks when `free`, for it calls `mallopt(1, 0)` to set `global_max_fat` to 0x10.
 * there is a `seccomp` sandbox to limit the syscall which can't use `execve` to get shell.
+
 ```
 $ seccomp-tools dump ./babyheap
  line  CODE  JT   JF      K
@@ -66,6 +67,7 @@ i used `rop` to execute `mprotect` and make stack executable, then execute shell
 7. overwrite `__free_hook` to `ret gadget`.
 7.  execute the rop to make stack executable and execute shellcode to read flag file.
 
+
 ## shellcoder 
 
 seven bytes shellcode, which clean all the register except `rdi`, so we can use shellcode as below to read more shellcode:
@@ -85,6 +87,7 @@ the vuln is in func `0xb0b` that it call read with the size of the `total size` 
 but how to use, we used to learn overwrite the top chunk size, and then free it into unsorted bin, and then do unsorted bin attack in `house of orange`.
 
 but here it can't realized, for it is in `thread arena` and not in `main arean`. when top chunk is not enough, it will not free the old top chunk, instead it will directly expand the old top chunk according to the source code:
+
 ```
   if (av != &main_arena)
 {
@@ -154,10 +157,12 @@ go back to the problem, it is a little complicated program that there is a lot o
 i won't analysis the program step by step, and will just point where is the vuln. you can check the program with my `ida` in my github, which try my best to do the structure building. 
 
 there a two vulns in the program:
+
 * one is in say function, that the first `message_mmap_offset` is overlapping with the `message content` for all the content of the `message_mmap` is `null`, so the next `find_mmap_ptr_last` return the same address with the last mmap.
 * the second is a uaf vuln. when `modify` the name,  it use `login_user` global pointer, but when in sync, it free the user structure with `user_link`, if we deploy the heap appropriately,  we will get a uaf.
 
 so how to use these two vuln? first we can use the first vuln to leak libc address. we can overwrite `message_mmap_offset` with our `message content` to a big value which point to the `ld.so` memory.  the `mmap` memory  is next to `ld.so` memory:
+
 ```
 pwndbg> vmmap
 ...
@@ -167,12 +172,16 @@ pwndbg> vmmap
     0x7f0537b69000     0x7f0537b6a000 rw-p     1000 25000  /glibc/x64/2.27/lib/ld-2.27.so
  ...   
 ```
+
 the offset is always the same `0x13000`:
+
 ```
 pwndbg> print 0x7f0537b69000 -0x7f0537b56000
 $1 = 0x13000
 ```
+
 and in `ld.so`, there a libc address `__GI___libc_malloc`
+
 ```
 telescope 0x7f0537b69000
 00:0000│   0x7f0537b69000 (_GLOBAL_OFFSET_TABLE_) ◂— 0x224e68 /* 'hN"' */
@@ -180,8 +189,8 @@ telescope 0x7f0537b69000
 ... ↓
 03:0018│   0x7f0537b69018 (_GLOBAL_OFFSET_TABLE_+24) —▸ 0x7f05376ba270 (_dl_catch_exception) ◂— push   rbx
 04:0020│   0x7f0537b69020 (_GLOBAL_OFFSET_TABLE_+32) —▸ 0x7f05375ea070 (malloc) ◂— push   rbp
-
 ```
+
 so we can overwrite `message_mmap_offset` to `0x13020` which point to `0x7f0537b69020` finally and it will leak out libc address.
 
 after link, we can use the uaf to do `tcache` attack and overwrite `strchr got` to `system` address and get the shell.
