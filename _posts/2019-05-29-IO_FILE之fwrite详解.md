@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IO FILE之fwite详解"
+title:  "IO FILE之fwrite详解"
 date:   2019-05-29 15:15:00
 categories: ctf
 permalink: /archivers/IO_FILE_fwrite_analysis
