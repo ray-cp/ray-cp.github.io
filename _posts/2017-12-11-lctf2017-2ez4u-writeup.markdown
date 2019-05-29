@@ -79,7 +79,7 @@ permalink: /archivers/Large bin attack--LCTF2017-2ez4u--writeup
             }
         }
 ```
-有关堆的管理与结构不多说，需要强调下的是，large bin数组里的不再是存储大小一样chunk，而是可以存储等差数列变化的chunk块。large bin chunk结构体中的fd_nextsize和bk_nextsize俩个字段是有意义的，large bins中空闲chunk是按照大小排序的，但同一个大小的chunk可能有多个，增加这俩个字段可以加快遍历空闲chunk，fd_nextsize指向下一个比当前chunk大小大的第一个空闲块，bk_nextsize指向前一个比当前chunk大小小的第一个空闲chunk。
+有关堆的管理与结构不多说，需要强调下的是，large bin数组里的不再是存储大小一样chunk，而是可以存储等差数列变化的chunk块。large bin chunk结构体中的fd_nextsize和bk_nextsize俩个字段是有意义的，large bins中空闲chunk是按照大小排序的，但同一个大小的chunk可能有多个，增加这俩个字段可以加快遍历空闲chunk，fd_nextsize指向下一个比当前chunk大小小的第一个空闲块，bk_nextsize指向前一个比当前chunk大小大的第一个空闲chunk。
 
 总结下large bin chunk分配的过程，查询对应的large bin链表，不为空的话，反向遍历，chunk size链表直到找到第一个大于等于所需chunk大小的chunk退出循环。找到合适的chunk之后，使用unlink将该块分配出来，并设置好相应的结构。
 
