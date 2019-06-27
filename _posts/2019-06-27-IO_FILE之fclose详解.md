@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IO FILE之fclose详解"
-date:   2019-06-27 80:00:00
+date:   2019-06-27 08:00:00
 categories: ctf
 permalink: /archivers/IO_FILE_fclose_analysis
 ---
@@ -125,7 +125,9 @@ libc_hidden_def (_IO_un_link)
 
 经过了这个函数，此时IO FILE已从`_IO_list_all`链表取下，此时的`_IO_list_all`中的值为：
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-06-27-IO_FILE_fclose_analysis/1557803801638.png)
+
 ### _IO_file_close_it关闭文件并释放缓冲区
+
 
 第二部分就是调用`_IO_file_close_it`关闭文件，释放缓冲区，并清空缓冲区指针。跟进去该函数，文件在`/libio/fileops.c`中：
 ```
