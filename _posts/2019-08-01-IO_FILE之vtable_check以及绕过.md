@@ -220,7 +220,7 @@ delete(C) #此时C将被释放至
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-08-01-IO_FILE_vtable_check_and_bypass/1558006126619.png)
 `_IO_list_all->_chain`指向`unsorted bin+0x68`的位置即smallbin size为0x60的位置：
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-08-01-IO_FILE_vtable_check_and_bypass/1558006168735.png)
-`_IO_list_all->_chain->_chain`指向`unsorted bin+0xd0`的位置，即smallbin size为0xb0的位置，此时由于存在我们已经释放的堆的地址，因此它指向了我们伪造的结构。
+`_IO_list_all->_chain->_chain`指向`unsorted bin+0xb8`的位置，即smallbin size为0xb0的位置，此时由于存在我们已经释放的堆的地址，因此它指向了我们伪造的结构。
 ![Alt text](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-08-01-IO_FILE_vtable_check_and_bypass/1558006329858.png)
 
 堆内容的构造则和上一题babyprintf没有区别，甚至可以使用同一个模版，不再细说。覆盖vtalbe为`_IO_str_jumps-8`，绕过vtable的check，同时设置好IO FILE的字段绕过相应检查，最终进入到`_IO_flush_all_lockp`触发FSOP，经过两次`_chain`的索引就会执行`system("/bin/sh")`。
