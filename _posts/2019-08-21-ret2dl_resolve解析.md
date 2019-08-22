@@ -7,8 +7,6 @@ permalink: /archivers/ret2dl_resolve_analysis
 ---
 
 
-# ret2dl_resolve解析
-
 ELF文件利用延迟绑定技术来解决动态程序模块与函数的重定位问题。`ret2dl_resolve`的原理是基于延迟绑定技术而形成的利用技巧，它通过伪造数据结构以及对函数延迟绑定过程的拦截，实现任意函数调用的目的。
 
 本篇文章主要描述延迟绑定的原理、32位以及64位ELF文件的ret2dl_resolve技术。
