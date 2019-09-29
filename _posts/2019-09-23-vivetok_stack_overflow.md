@@ -245,3 +245,5 @@ p.sendline(payload)
 3. [Vivotek IP Cameras - Remote Stack Overflow](https://seclists.org/fulldisclosure/2017/Nov/31)
 4. [Vivotek 摄像头远程栈溢出漏洞分析及利用](https://paper.seebug.org/480/)
 5. [gdb-static-cross](https://github.com/stayliv3/gdb-static-cross/tree/master/prebuilt)
+
+文章先发于[安全客](https://www.anquanke.com/post/id/185336)
