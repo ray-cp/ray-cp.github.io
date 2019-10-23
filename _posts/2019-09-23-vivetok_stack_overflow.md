@@ -3,7 +3,7 @@ layout: post
 title:  "vivetok 摄像头远程栈溢出漏洞分析"
 date:   2019-09-22 15:00:00
 categories: Vuln_Analysis
-permalink: /archivers/tp_link_sr20_ace
+permalink: /archivers/2019-09-22-vivetok_remote_stack_overflow
 ---
 
 ## 漏洞描述
