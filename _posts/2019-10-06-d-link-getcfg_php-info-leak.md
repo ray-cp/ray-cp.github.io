@@ -2,7 +2,7 @@
 layout: post
 title:  "Dlink getcfg.php远程敏感信息读取漏洞分析"
 date:   2019-10-06 21:00:00
-categories: Vuln_Analysis
+categories: Vuln_Analysis IOT
 permalink: /archivers/d-link-getcfg_php-info-leak
 ---
 

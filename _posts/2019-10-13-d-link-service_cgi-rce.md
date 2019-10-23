@@ -2,7 +2,7 @@
 layout: post
 title:  "D-Link service.cgi远程命令执行漏洞分析"
 date:   2019-10-13 21:00:00
-categories: Vuln_Analysis
+categories: Vuln_Analysis IOT
 permalink: /archivers/d-link-service_cgi-rce
 ---
 

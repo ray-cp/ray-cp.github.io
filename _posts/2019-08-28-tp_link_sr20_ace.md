@@ -2,7 +2,7 @@
 layout: post
 title:  "TP Link SR20 ACE漏洞分析"
 date:   2019-08-28 15:00:00
-categories: Vuln_Analysis
+categories: Vuln_Analysis IOT
 permalink: /archivers/tp_link_sr20_ace
 ---
 

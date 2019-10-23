@@ -2,7 +2,7 @@
 layout: post
 title:  "揭秘家用路由器0day漏洞挖掘技术--读书笔记"
 date:   2019-03-03 17:21:00
-categories: book_note
+categories: IOT
 permalink: /archivers/router_vuln_book_note
 ---
 

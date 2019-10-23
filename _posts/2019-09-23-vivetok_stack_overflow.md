@@ -2,7 +2,7 @@
 layout: post
 title:  "vivetok 摄像头远程栈溢出漏洞分析"
 date:   2019-09-22 15:00:00
-categories: Vuln_Analysis
+categories: Vuln_Analysis IOT
 permalink: /archivers/2019-09-22-vivetok_remote_stack_overflow
 ---
 
