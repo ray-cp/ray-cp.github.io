@@ -502,5 +502,5 @@ flag{welcome_to_the_qeme_world}
 2. [BlizzardCTF 2017 - Strng](https://uaf.io/exploitation/2018/05/17/BlizzardCTF-2017-Strng.html)
 3. [Blizzard CTF 2017 Strng](https://www.w0lfzhang.com/2018/11/05/Blizzard-CTF-2017-Strng/)
 
-文章先发于[先知](https://xz.aliyun.com/t/6562)社区。
+文章先发于[先知](https://xz.aliyun.com/t/6618)社区。
 
