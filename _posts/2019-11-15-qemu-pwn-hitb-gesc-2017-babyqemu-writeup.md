@@ -47,7 +47,7 @@ drwxr-xr-x@ 59 raycp  staff       1888 Jul 11  2017 pc-bios
 
 根据命令行参数`-device hitb`，大概知道了要pwn的目标pci设备是`hitb`。在IDA里面搜索hitb相关的函数，相关函数列表如下：
 
-![hitb_device_relative_function](](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-11-15-qemu-pwn-hitb-gesc-2017-babyqemu-writeup/hitb_device_relative_function.png)
+![hitb_device_relative_function](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2019-11-15-qemu-pwn-hitb-gesc-2017-babyqemu-writeup/hitb_device_relative_function.png)
 
 查看`pci_hitb_register_types`，知道了该设备所对应的`TypeInfo`。并且它的`class_init`函数为`hitb_class_init`，`instance_init`函数为`hitb_instance_init`。
 
