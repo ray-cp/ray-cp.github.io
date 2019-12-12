@@ -6,8 +6,6 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-DefconQuals-2018-EC3
 ---
 
-# qemu-pwn-DefconQuals-2018-EC3
-
 
 这题是qemu逃逸是一道堆题，实际环境的堆题还是和普通的pwn题有一定区别的，同时这题还是把符号去掉了，增加了逆向的难度。
 
