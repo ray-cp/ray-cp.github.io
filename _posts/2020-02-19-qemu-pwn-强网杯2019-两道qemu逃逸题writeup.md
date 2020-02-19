@@ -1,14 +1,14 @@
 ---
 layout: post
 title: qemu-pwn 强网杯2019 两道qemu逃逸题writeup
-date: 2020-02-19 20:20:16
+date: 2020-02-19 20:26:49
 categories: vm-escape
 permalink: /archivers/qemu-pwn-强网杯2019-两道qemu逃逸题writeup
 ---
 
-欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
-
+时间： 2019.08.26-2019.09.01
 
 终于到了这里，把qwb2019的这两题qemu逃逸题复现之后，qemu pwn的复现到这里就告一段落，接下来将会去分析几个qemu的cve。qwb初赛和决赛各有一道qemu逃逸题，初赛是`qwct`，决赛是`ExecChrome`。
 
