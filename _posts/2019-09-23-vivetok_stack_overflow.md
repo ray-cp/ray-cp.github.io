@@ -6,6 +6,8 @@ categories: Vuln_Analysis IOT
 permalink: /archivers/2019-09-22-vivetok_remote_stack_overflow
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 ## 漏洞描述
 
 2017年vivetok摄像头曝出一个栈溢出漏洞，影响该系列多款型号。

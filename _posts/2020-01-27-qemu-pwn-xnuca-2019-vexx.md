@@ -6,9 +6,10 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-xnuca-2019-vexx
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 这是第一次在比赛中作出qemu逃逸题，虽然不难，但是也还是蛮开心的。
 
-欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流与分享的公众号。
 
 ## 描述
 

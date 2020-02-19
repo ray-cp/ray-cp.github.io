@@ -6,6 +6,8 @@ categories: ctf
 permalink: /archivers/IO_FILE_fclose_analysis
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 这是本系列的第四篇文章，经过`fwrite`以及`fread`的分析，在进行fclose调试之前，已经知道IO FILE结构体包括两个堆结构，一个是保存IO FILE结构体的堆，一个是输入输出缓冲区的堆。对于fclose的分析，主要有两个关注点，一个是函数的流程，一个就是对于堆块的处理（何时释放，如何释放）。
 
 传送门：

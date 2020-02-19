@@ -6,6 +6,8 @@ categories: ctf
 permalink: /archivers/heap_global_max_fast_exploit
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 ## 前言
 
 事情的起因还要从*ctf 2019说起，`heap_master`里能用`unsorted bin attack`实现一次任意地址写，一开始想到的是写stdout来实现地址泄露 ，但是这样要写两次才能实现，花了很大的经历找另外一次写，仍然没有找到，很绝望。

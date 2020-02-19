@@ -6,6 +6,8 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-hitb-gesc-2017-babyqemu-writeup
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 ## 描述
 
 下载文件，解压后文件结构如下：

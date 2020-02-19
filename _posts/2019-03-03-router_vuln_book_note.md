@@ -6,6 +6,8 @@ categories: IOT
 permalink: /archivers/router_vuln_book_note
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 # 第一章 基础准备与工具
 
 路由器漏洞分类：路由器密码破解漏洞、路由器web漏洞、路由器后门漏洞、路由器溢出漏洞。

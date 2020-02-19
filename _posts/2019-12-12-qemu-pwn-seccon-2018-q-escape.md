@@ -6,6 +6,8 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-seccon-2018-q-escape
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 ## 描述
 
 [官方](https://github.com/SECCON/SECCON2018_online_CTF/tree/master/Pwn/q-escape)的描述如下：

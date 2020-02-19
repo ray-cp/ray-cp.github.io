@@ -6,6 +6,8 @@ categories: ctf
 permalink: /archivers/IO_FILE_fwrite_analysis
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 这是IO FILE系列的第三篇文章，主要讲述怎么通过IO向文件描述符进行输出，通过了前两篇的分析，这次对fwrite函数的分析快了不少，看源码调源码还是有点意思的。
 
 

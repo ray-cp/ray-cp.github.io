@@ -6,6 +6,8 @@ categories: ctf
 permalink: /archivers/IO_FILE_fopen_analysis
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 ## 前言
 
 最近打算详细整理下`IO FILE`相关的笔记，不少地方都是知道个大概，因此这次打算从源码出发，把IO FILE相关的东西都过一遍。

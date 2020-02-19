@@ -6,6 +6,8 @@ categories: ctf
 permalink: /archivers/ptmalloc_argebin_attack
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 
 很早之前写了largebin attack的利用方式之一的lctf2017的[2ez4u](https://ray-cp.github.io/archivers/Large%20bin%20attack--LCTF2017-2ez4u--writeup)的wp，但是过去了很久，都忘了。以前对于源码了解的也不够清楚，只知道个大概，并且0ctf2018的heapstorm2出现了largebin attack的第二种姿势，一直想抽时间把largebin分配与释放的过程再好好看看，把这两种方式再好好的总结下，以免后面还是忘掉。
 

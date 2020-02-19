@@ -6,6 +6,7 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-DefconQuals-2018-EC3
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 这题是qemu逃逸是一道堆题，实际环境的堆题还是和普通的pwn题有一定区别的，同时这题还是把符号去掉了，增加了逆向的难度。
 

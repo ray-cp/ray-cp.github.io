@@ -6,6 +6,8 @@ categories: Vuln_Analysis IOT
 permalink: /archivers/d-link-getcfg_php-info-leak
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 
 这个漏洞似乎在Dlink很多的产品都存在，此次分析主要是针对dir-645，将该漏洞点从1.02到1.04都分析一遍。
 

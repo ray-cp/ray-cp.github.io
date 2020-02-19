@@ -6,6 +6,8 @@ categories: Vuln_Analysis IOT
 permalink: /archivers/d-link-service_cgi-rce
 ---
 
+**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
+
 
 上篇文章分析了信息泄露漏洞，可以获取到密码等信息。此次主要是基于上篇文章的认证，分析该系列设备的认证后的命令执行执行漏洞，该漏洞形成的原因是由于service.cgi在处理HTTP POST请求中的数据不当，形成命令拼接，导致可执行任意命令。
 
