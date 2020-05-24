@@ -6,7 +6,6 @@ categories: ctf
 permalink: /archivers/ret2dl_resolve_analysis
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 
 ELF文件利用延迟绑定技术来解决动态程序模块与函数的重定位问题。`ret2dl_resolve`的原理是基于延迟绑定技术而形成的利用技巧，它通过伪造数据结构以及对函数延迟绑定过程的拦截，实现任意函数调用的目的。

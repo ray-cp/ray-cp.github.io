@@ -6,8 +6,6 @@ categories: Vuln_Analysis IOT
 permalink: /archivers/tp_link_sr20_ace
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
-
 这个漏洞是`Matthew Garrett`在发现漏洞并将漏洞报告给官方后未得到官方回复后，将其漏洞信息公布在了个人[网站](https://mjg59.dreamwidth.org/51672.html)上，404的[大佬](https://paper.seebug.org/879/)在复现漏洞的时候官方还未修复漏洞，但是我下载固件的时候看到了官方已经发布了最新的固件，且它的日志为`Fixed the zero-day ACE vulnerability`，即修复了0day的ace漏洞，现在复现分析这个漏洞仅是以学习的目的。
 
 ## 前置知识

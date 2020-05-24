@@ -6,7 +6,6 @@ categories: ctf
 permalink: /archivers/IO_FILE_vtable_hajack_and_fsop
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 
 之前的文章对IO FILE相关功能函数的源码进行了分析，后续将对IO FILE相关的利用进行阐述。

@@ -6,7 +6,6 @@ categories: ctf
 permalink: /archivers/heap_global_max_fast_exploit
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 ## 前言
 

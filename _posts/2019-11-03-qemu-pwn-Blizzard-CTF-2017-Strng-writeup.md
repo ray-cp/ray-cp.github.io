@@ -6,8 +6,6 @@ categories: vm-escape
 permalink: /archivers/qemu-pwn-Blizzard-CTF-2017-Strng-writeup
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
-
 这题其实是学习qemu的第二题，第一题是[HITB GSEC 2017: babyqemu](https://kitctf.de/writeups/hitb2017/babyqemu)，但是当时做它的时候其实对qemu基本上是啥也不了解（虽然现在也不太清楚，但是稍微有点基础了），所以此题应该算是第一题吧。
 
 通过这题巩固了之前看的qemu的基础知识部分，包括MMIO、PMIO以及QOM编程模型等，这题的特色在于它的漏洞不是存在于MMIO中，而是PMIO中。

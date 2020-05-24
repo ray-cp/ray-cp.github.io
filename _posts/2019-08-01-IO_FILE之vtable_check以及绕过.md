@@ -6,7 +6,6 @@ categories: ctf
 permalink: /archivers/IO_FILE_vtable_check_and_bypass
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 
 上一篇介绍了libc2.23之前版本的劫持vtable以及FSOP的利用方法。如今vtable包含了如此多的函数，功能这么强大，没有保护的机制实在是有点说不过去。在大家都开始利用修改vtable指针进行控制程序流的时候，glibc在2.24以后加入了相应的检查机制，使得传统的修改vtable指针指向可控内存的方法失效。但道高一尺，魔高一丈，很快又出现了新的绕过方式。本篇文章主要介绍libc2.24以后的版本对于vtable的检查以及相应的绕过方式。

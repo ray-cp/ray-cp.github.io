@@ -6,7 +6,6 @@ categories: ctf
 permalink: /archivers/IO_FILE_fread_analysis
 ---
 
-**欢迎关注公众号[平凡路上](https://mp.weixin.qq.com/s/TR-JuE2nl3W7ZmufAfpBZA)，平凡路上是一个致力于二进制漏洞分析与利用经验交流的公众号。**
 
 这是IO FILE系列的第二篇文章，主要写的是对于fread函数的源码分析，描述fread读取文件流的主要流程以及函数对IO FILE结构体以及结构体中的vtable的操作。流程有点小复杂，入坑需谨慎。
 
