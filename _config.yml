@@ -1,5 +1,5 @@
 # Site settings
-title: 纵有寂寂无名时
+title: 平凡路上 #纵有寂寂无名时
 url: "http://ray-cp.github.io"    # the protocol and hostname of your site, eg. `http://xxxx.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
