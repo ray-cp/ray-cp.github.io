@@ -784,7 +784,7 @@ ArbitraryWrite(rwxAddr, shellcode);
 wasmFunc();
 ```
 
-![calc]((https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2021-01-03-jsc-pwn-FireShell-ctf-2020-The-Return-of-the-Side-Effect-writeup/calc.png.png))
+![calc](https://raw.githubusercontent.com/ray-cp/ray-cp.github.io/master/_img/2021-01-03-jsc-pwn-FireShell-ctf-2020-The-Return-of-the-Side-Effect-writeup/calc.png.png)
 
 ## 总结
 
